@@ -2,12 +2,19 @@
   "name": "video-hosting-website",
   "version": "1.0.0",
   "description": "a video hosting and streaming website",
-  "keywords": ["backend","javascript"],
+  "keywords": [
+    "backend",
+    "javascript"
+  ],
   "license": "ISC",
   "author": "Sami Ul Haq",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node --watch index.js"
+    "start": "node --env-file=.env --watch ./src/index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.19.3"
   }
 }
