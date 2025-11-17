@@ -10,4 +10,9 @@ app.use(express.static('public'));
 app.use(cors());
 app.use(cookieParser());
 
+//Routes
+import userRouter from "./routes/user.route.js";
+
+app.use('/api/v1/users', userRouter);
+
 export default app;
